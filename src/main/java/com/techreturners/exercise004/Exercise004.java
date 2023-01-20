@@ -1,7 +1,5 @@
 package com.techreturners.exercise004;
 
-import java.sql.SQLOutput;
-import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
