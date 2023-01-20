@@ -51,5 +51,37 @@ public class Exercise003Test {
         assertArrayEquals(expected, ex003.iceCreamFlavours());
     }
 
+    // Additional TestCases
+    @Test
+    public void checkGetIceCreamCodeForPistachio() {
+        String iceCreamFlavour = "Pistachio";
+        int expected = 0;
+
+        assertEquals(expected, ex003.getIceCreamCode(iceCreamFlavour));
+    }
+
+    @Test
+    public void checkGetIceCreamCodeForVanilla() {
+        String iceCreamFlavour = "Vanilla";
+        int expected = 2;
+
+        assertEquals(expected, ex003.getIceCreamCode(iceCreamFlavour));
+    }
+
+    @Test
+    public void checkGetIceCreamCodeForChocolate() {
+        String iceCreamFlavour = "Chocolate";
+        int expected = 4;
+
+        assertEquals(expected, ex003.getIceCreamCode(iceCreamFlavour));
+    }
+
+    @Test
+    public void checkGetIceCreamForBelgianChocolate() {
+        String iceCreamFlavour = "BelgianChocolate";
+        int expected = -1;
+
+        assertEquals(expected, ex003.getIceCreamCode(iceCreamFlavour));
+    }
 
 }
