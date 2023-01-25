@@ -1,9 +1,9 @@
 package com.techreturners.exercise005;
 
 public class Exercise005 {
-
+private static final int ALPHABET_LETTER_COUNT = 26;
     public boolean isPangram(String input) {
-        boolean[] alphabetList = new boolean[26];
+        boolean[] alphabetList = new boolean[ALPHABET_LETTER_COUNT];
         int index = 0;
 
         for (int i = 0; i < input.length(); i++) {

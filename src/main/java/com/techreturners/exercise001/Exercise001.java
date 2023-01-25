@@ -21,8 +21,7 @@ public class Exercise001 {
 
     public String reverse(String sentence) {
         StringBuffer sb = new StringBuffer(sentence);
-        sb.reverse();
-        return sb.toString();
+        return sb.reverse().toString();
     }
 
     public int countLinuxUsers(List<User> users) {
